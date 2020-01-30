@@ -34,7 +34,7 @@ app.get('/about', (req, res) => {
 //set up a dynamic 'project' (/project) route 
 app.get('/projects', (req, res) => {
     //render the 'project' page (see notes on treehouse)
-    res.send('<h1>This is where I show off my projects</h1>');
+    res.render('project');
 });  
     
 
