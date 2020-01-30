@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 //set up an 'about' (/about) route
 app.get('/about', (req, res) => {
     //render the 'About' page
-    res.send('<h1>This is where I will talk about myself</h1>');
+    res.render('about');
 });
     
 
