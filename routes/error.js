@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
+//do I need this here?
 const {projects} = require('../data.json');
 
                         /*Handle Errors*/
 //404 error
+//do I need this more specific to projects ids?
     // if a user navigates to a non-existing route 
     router.use( (req, res, next) => {
         //display a user friendly message 

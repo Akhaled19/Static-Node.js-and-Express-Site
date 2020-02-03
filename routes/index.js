@@ -2,8 +2,11 @@
 
 const express = require('express');
 const router = express.Router();
+//do I need this here?
 const {projects} = require('../data.json');
 
+//where is the  section for projects routes?
+ 
 //set up an 'index' (/) route
 router.get('/', (req, res) => {
     //render the 'Home' page w/ locals set to data.projects 
