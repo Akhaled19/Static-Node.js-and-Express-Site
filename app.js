@@ -1,7 +1,11 @@
                         /*require dependencies*/
 //required express
 const express = require('express');
-//return the express application
+
+//require the middleware request 
+const bodyParse = require('body-parser');
+
+//return express
 const app = express();
 
 //required data.json file
@@ -9,11 +13,14 @@ const app = express();
 
 
 
+
                             /*Middleware*/
 //set up 'view engine' to pug 
 app.set('view engine', 'pug');
-//use a static route and the express.static method to serve the static files located in the public folder
 
+//use a static route and the express.static method to serve the static files located in the public folder
+app.use(bodyParse.urlencoded({extended: false}));
+app.use('/static', express.static('public'));
 
 
                             /*Routes*/
@@ -21,6 +28,7 @@ app.set('view engine', 'pug');
 const routes = require('./routes');
 const IndexRoute = require('./routes/index');
 const projectRoute = require('./routes/project');
+const errorRoute = require('./routes/error');
 
 
                         /*Start Server*/
