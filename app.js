@@ -18,7 +18,9 @@ app.set('view engine', 'pug');
 
                             /*Routes*/
 //import router
-const routes = require('/.routes');
+const routes = require('./routes');
+const IndexRoute = require('./routes/index');
+const projectRoute = require('./routes/project');
 
 
                         /*Start Server*/
