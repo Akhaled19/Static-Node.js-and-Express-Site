@@ -1,7 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const {projects} = require('../data.json');
+
                         /*Handle Errors*/
 //404 error
     // if a user navigates to a non-existing route 
-    app.use( (req, res, next) => {
+    router.use( (req, res, next) => {
         //display a user friendly message 
         const err = new Error('Not Found');
         err.status = 404;
@@ -9,7 +13,7 @@
     });    
 
 //app.js error handler 
-app.use( (err, req, res, next) => { 
+router.use( (err, req, res, next) => { 
     // sets the error message to a user friendly message 
     res.locals.error = err;
     //sets the status code 
@@ -20,7 +24,7 @@ app.use( (err, req, res, next) => {
 
 //message in the console
     //if app point at a URL that doesn't exist as a router in the app ex: /error/error
-    app.use( (req, res, next) => {
+    router.use( (req, res, next) => {
         //console log a user friendly message  
         const err = new Error('oh noes!');
         next(err);  
