@@ -7,25 +7,16 @@ const {projects} = require('../data.json');
     // if a user navigates to a non-existing route 
     router.use( (req, res, next) => {
         //display a user friendly message 
-        const err = new Error('Not Found');
+        const err = new Error('Could not find the requested resource');
         err.status = 404;
         next(err);
     });    
 
 //app.js error handler 
 router.use( (err, req, res, next) => { 
-    // sets the error message to a user friendly message 
-    res.locals.error = err;
     //sets the status code 
     res.status(err.status);
+    console.log(`Error: ${err.message}`);
     //pass in err object to give the template access to the error data
     res.render('error', err); 
 });
-
-//message in the console
-    //if app point at a URL that doesn't exist as a router in the app ex: /error/error
-    router.use( (req, res, next) => {
-        //console log a user friendly message  
-        const err = new Error('oh noes!');
-        next(err);  
-    });    
