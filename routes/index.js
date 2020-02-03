@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+const {projects} = require('../data.json');
 
 //set up an 'index' (/) route
 router.get('/', (req, res) => {
@@ -16,5 +17,5 @@ router.get('/about', (req, res) => {
     res.render('about');
 });
 
-//This allows us to export and use in app.js 
+
 module.exports = router;
