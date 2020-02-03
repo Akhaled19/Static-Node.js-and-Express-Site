@@ -1,17 +1,15 @@
                         /*require dependencies*/
+
+//app.js requirements to be able to run the app
+
 //required express
 const express = require('express');
 
 //require the middleware request 
 const bodyParse = require('body-parser');
 
-//return express
+//creating a new express app
 const app = express();
-
-//required data.json file
-//the path module which can be used when setting the absolute path in the express.static function.
-
-
 
 
                             /*Middleware*/
