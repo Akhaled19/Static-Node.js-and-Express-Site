@@ -28,7 +28,8 @@ const IndexRoute = require('./routes/index');
 const projectRoute = require('./routes/project');
 const errorRoute = require('./routes/error');
 
-//section to use a static route serve the image files for each project 
+
+//section to use a static route & serve the image files for each project 
 
 
                         /*Start Server*/
