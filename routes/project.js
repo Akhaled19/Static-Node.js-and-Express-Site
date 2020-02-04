@@ -4,6 +4,7 @@
 
 const express = require('express');
 const router = express.Router();
+const {projects} = require('../data.json');
 
 //set up a dynamic 'project' (/project) route 
 router.get('/projects', (req, res) => {
