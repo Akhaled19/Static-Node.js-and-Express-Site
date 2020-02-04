@@ -7,8 +7,15 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/Unit-1---Random-Quote-Generator/",
             "github-link": "https://github.com/Akhaled19/Unit-1---Random-Quote-Generator",
-            "image-urls": ,
-            "project-images":  
+            "image-urls": [
+                {
+                    "main-image":
+                },
+                {
+                    "project-images": []
+                }
+
+            ] 
         },
         {
             "id": "1" ,
@@ -17,8 +24,15 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/2-List-Pagination-and-Filtering/#",
             "github-link": "https://github.com/Akhaled19/2-List-Pagination-and-Filtering",
-            "image-urls": ,
-            "project-images": 
+            "image-urls": [
+                {
+                    "main-image":
+                },
+                {
+                    "project-images": []
+                }
+
+            ]
         },
         {
             "id": "2" ,
@@ -27,8 +41,15 @@
             "technologies": ["JavaScript", "jQuery", "CSS", "HTML"],
             "live_link": "https://akhaled19.github.io/Unit3-Build-an-Interactive-Form/",
             "github-link": "https://github.com/Akhaled19/Unit3-Build-an-Interactive-Form",
-            "image-urls": ,
-            "project-images":
+            "image-urls": [
+                {
+                    "main-image":
+                },
+                {
+                    "project-images": []
+                }
+
+            ]
         },
         {
             "id": "3" ,
@@ -37,8 +58,15 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/Unit4-OOP_Game_Show_App/",
             "github-link": "https://github.com/Akhaled19/Unit4-OOP_Game_Show_App",
-            "image-urls": ,
-            "project-images": 
+            "image-urls": [
+                {
+                    "main-image":
+                },
+                {
+                    "project-images": []
+                }
+
+            ] 
         },
         {
             "id": "4",
@@ -47,8 +75,16 @@
             "technologies": ,
             "live_link": ,
             "github-link": ,
-            "image-urls": ,
-            "project-images": 
+            "image-urls": [
+                {
+                    "main-image":
+                },
+                {
+                    "project-images": []
+                }
+
+            ]   
+           
         }
     ]
 }
