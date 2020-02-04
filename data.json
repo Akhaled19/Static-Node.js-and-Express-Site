@@ -71,10 +71,10 @@
         {
             "id": "4",
             "project_name": "Public API Request",
-            "description": ,
-            "technologies": ,
-            "live_link": ,
-            "github-link": ,
+            "description": "Built an app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. Used Random User Generator API to grab information for 12 random U.S.A based 'employees,' and use that data to build Awesome Startup prototype. This project demonstrates ability to work with public APIs, making API requests, and asynchronously handling data.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://akhaled19.github.io/Unit5-public_api_request/",
+            "github-link": "https://github.com/Akhaled19/Unit5-public_api_request",
             "image-urls": [
                 {
                     "main-image":
