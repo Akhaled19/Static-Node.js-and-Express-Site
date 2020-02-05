@@ -4,6 +4,10 @@
 extends layout.pug
 
 block content
-    h1= error.message
-    h2= error.status
-    pre= error.stack
+    h1= `${error.message}`
+    img(src="images/404-error-mad-cat.png")
+    br
+    p Let's take a look at the problem...
+    h2= `Status: ${error.status}`
+        br
+        p= `Stack: ${error.stack}`
