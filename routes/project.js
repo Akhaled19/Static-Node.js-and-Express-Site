@@ -6,8 +6,8 @@ const {projects} = require('../data.json');
 
 //A dynamic 'project' route: If you go to a project without an id, it will send you back to the portfolio page with all projects 
 router.get('/', (req, res) => {
-    //render the 'project' page without an id 
-    res.render('/');
+    //redirect the 'project' page without an id 
+    res.redirect('/');
 }); 
 
 //A dynamic 'project/id' using the json file to render ids for each page 
@@ -20,7 +20,15 @@ router.get('/:id', (req, res) => {
     //checks if the id matches up with any of project in the array
     projectsArray.forEach(project => {
         if(project.id === id ) {
-            const currentProject = 
+            // to render these properties and store it in the currentProject object 
+            const currentProject = {
+                project_name: project.project_name,
+                description: project.description,
+                technologies: project.technologies,
+                live_link: project.live_link,
+                github_link: project.github_link,
+                image_urls: project.image_urls
+            };
             res.render('project', currentProject);
         }
     });

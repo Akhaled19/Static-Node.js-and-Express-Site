@@ -14,11 +14,12 @@ router.use( (req, res, next) => {
 
 //error handler 
 router.use( (err, req, res, next) => { 
+    res.locals.error = err;
     //sets the status code 
     res.status(err.status);
     console.log(`Error: ${err.message}`);
     //pass in err object to give the template access to the error data
-    res.render('error', {error:message}); 
+    res.render('error', err); 
 });
 
 //export error handlers in order to use elsewhere  
