@@ -1,13 +1,10 @@
                         /*require dependencies*/
-
 //app.js requirements to be able to run the app
 
-//required express
+//express
 const express = require('express');
-
-//require the middleware request 
+//middleware 
 const bodyParse = require('body-parser');
-
 //creating a new express app
 const app = express();
 
@@ -16,20 +13,24 @@ const app = express();
 //set up 'view engine' to pug 
 app.set('view engine', 'pug');
 
-//use a static route and the express.static method to serve the static files located in the public folder
 app.use(bodyParse.urlencoded({extended: false}));
+
+//serve the static files 
 app.use('/static', express.static('public'));
+app.use('/static', express.static('images'));
 
 
                             /*Routes*/
 //import router
 const routes = require('./routes');
-const IndexRoute = require('./routes/index');
+const indexRoute = require('./routes/index');
 const projectRoute = require('./routes/project');
 const errorRoute = require('./routes/error');
 
-
-//section to use a static route & serve the image files for each project 
+//use imported routes 
+app.use(indexRoute);
+app.use('/project', projectRoute);
+app.use(errorRoute);
 
 
                         /*Start Server*/
@@ -38,7 +39,3 @@ app.listen(3000, () => {
     //log a string to the console: which port the app is listening to
     console.log('This application is running on localhost:3000')
 });
-
-
-
-                        /*Handle Errors*/
