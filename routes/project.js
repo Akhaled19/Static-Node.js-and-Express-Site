@@ -29,6 +29,7 @@ router.get('/:id', (req, res) => {
                 github_link: project.github_link,
                 image_urls: project.image_urls
             };
+            //takes a local & callback 
             res.render('project', currentProject);
         }
     });
