@@ -9,10 +9,10 @@
             "github-link": "https://github.com/Akhaled19/Unit-1---Random-Quote-Generator",
             "image-urls": [
                 {
-                    "main-image":
+                    "main-image": "/images/project1_main.png"
                 },
                 {
-                    "project-images": []
+                    "project-images": ["/images/project1_randomly.png"]
                 }
 
             ] 
@@ -26,10 +26,10 @@
             "github-link": "https://github.com/Akhaled19/2-List-Pagination-and-Filtering",
             "image-urls": [
                 {
-                    "main-image":
+                    "main-image": "/images/project2_main.png"
                 },
                 {
-                    "project-images": []
+                    "project-images": ["/images/project2_pagination.png"]
                 }
 
             ]
@@ -43,10 +43,10 @@
             "github-link": "https://github.com/Akhaled19/Unit3-Build-an-Interactive-Form",
             "image-urls": [
                 {
-                    "main-image":
+                    "main-image": "/images/project3_main.png"
                 },
                 {
-                    "project-images": []
+                    "project-images": ["/images/project3_allValidations", "/images/project3_realTimeValidation.png"]
                 }
 
             ]
@@ -60,10 +60,10 @@
             "github-link": "https://github.com/Akhaled19/Unit4-OOP_Game_Show_App",
             "image-urls": [
                 {
-                    "main-image":
+                    "main-image":"/images/project4_main.png"
                 },
                 {
-                    "project-images": []
+                    "project-images": ["/images/project4_BlankScreen.png", "/images/project4_duringGame.png", "/images/project4_loosesScreen.png", "/images/project4_winScreen.png"]
                 }
 
             ] 
@@ -77,10 +77,10 @@
             "github-link": "https://github.com/Akhaled19/Unit5-public_api_request",
             "image-urls": [
                 {
-                    "main-image":
+                    "main-image": "/images/project5_main.png"
                 },
                 {
-                    "project-images": []
+                    "project-images": ["/images/project5_modal.png", "/images/project5_noResultSearch.png"]
                 }
 
             ]   
