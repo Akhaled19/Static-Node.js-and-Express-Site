@@ -7,15 +7,14 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/Unit-1---Random-Quote-Generator/",
             "github-link": "https://github.com/Akhaled19/Unit-1---Random-Quote-Generator",
-            "image-urls": [
+            "image_urls":[
                 {
-                    "main-image": "/images/project1_main.png"
+                    "main_image": "/images/project1_main.png"
                 },
                 {
-                    "project-images": ["/images/project1_randomly.png"]
+                    "project_images": ["/images/project1_randomly.png"]
                 }
-
-            ] 
+            ]    
         },
         {
             "id": "1" ,
@@ -24,12 +23,12 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/2-List-Pagination-and-Filtering/#",
             "github-link": "https://github.com/Akhaled19/2-List-Pagination-and-Filtering",
-            "image-urls": [
+            "image_urls": [
                 {
-                    "main-image": "/images/project2_main.png"
+                    "main_image": "/images/project2_main.png"
                 },
                 {
-                    "project-images": ["/images/project2_pagination.png"]
+                    "project_images": ["/images/project2_pagination.png"]
                 }
 
             ]
@@ -41,12 +40,12 @@
             "technologies": ["JavaScript", "jQuery", "CSS", "HTML"],
             "live_link": "https://akhaled19.github.io/Unit3-Build-an-Interactive-Form/",
             "github-link": "https://github.com/Akhaled19/Unit3-Build-an-Interactive-Form",
-            "image-urls": [
+            "image_urls": [
                 {
-                    "main-image": "/images/project3_main.png"
+                    "main_image": "/images/project3_main.png"
                 },
                 {
-                    "project-images": ["/images/project3_allValidations", "/images/project3_realTimeValidation.png"]
+                    "project_images": ["/images/project3_allValidations", "/images/project3_realTimeValidation.png"]
                 }
 
             ]
@@ -58,12 +57,12 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/Unit4-OOP_Game_Show_App/",
             "github-link": "https://github.com/Akhaled19/Unit4-OOP_Game_Show_App",
-            "image-urls": [
+            "image_urls": [
                 {
-                    "main-image":"/images/project4_main.png"
+                    "main_image":"/images/project4_main.png"
                 },
                 {
-                    "project-images": ["/images/project4_BlankScreen.png", "/images/project4_duringGame.png", "/images/project4_loosesScreen.png", "/images/project4_winScreen.png"]
+                    "project_images": ["/images/project4_BlankScreen.png", "/images/project4_duringGame.png", "/images/project4_loosesScreen.png", "/images/project4_winScreen.png"]
                 }
 
             ] 
@@ -75,12 +74,12 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/Unit5-public_api_request/",
             "github-link": "https://github.com/Akhaled19/Unit5-public_api_request",
-            "image-urls": [
+            "image_urls": [
                 {
-                    "main-image": "/images/project5_main.png"
+                    "main_image": "/images/project5_main.png"
                 },
                 {
-                    "project-images": ["/images/project5_modal.png", "/images/project5_noResultSearch.png"]
+                    "project_images": ["/images/project5_modal.png", "/images/project5_noResultSearch.png"]
                 }
 
             ]   
