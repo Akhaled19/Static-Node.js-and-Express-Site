@@ -10,7 +10,7 @@ router.use( (req, res, next) => {
     const err = new Error(`Could not find the requested resource. Status: ${err.status}, Message: ${err.message}, Stack: ${err.stack}`);
     err.status = 404;
     next(err);
-    });    
+});    
 
 //error handler 
 router.use( (err, req, res, next) => { 

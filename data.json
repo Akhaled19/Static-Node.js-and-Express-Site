@@ -17,7 +17,7 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://akhaled19.github.io/2-List-Pagination-and-Filtering/#",
             "github_link": "https://github.com/Akhaled19/2-List-Pagination-and-Filtering",
-            "image_urls": ["/images/project2_main.png", "/images/project2_pagination.png"]
+            "image_urls": ["/static/images/project2_main.png", "/images/project2_pagination.png"]
         },
         {
             "id": "2" ,
