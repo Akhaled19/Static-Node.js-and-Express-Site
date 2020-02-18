@@ -7,11 +7,12 @@ const {projects} = require('../data.json');
 //do I need this more specific to projects ids?
 router.use( (req, res, next) => {
     //display a user friendly message 
+    console.log("In error handler")
     const err = new Error(`Could not find the requested resource. Status: ${err.status}, Message: ${err.message}, Stack: ${err.stack}`);
     err.status = 404;
     next(err);
 });    
-
+/** 
 //error handler 
 router.use( (err, req, res, next) => { 
     res.locals.error = err;
@@ -21,6 +22,6 @@ router.use( (err, req, res, next) => {
     //pass in err object to give the template access to the error data
     res.render('error', err); 
 });
-
+*/
 //export error handlers in order to use elsewhere  
 module.exports = router;

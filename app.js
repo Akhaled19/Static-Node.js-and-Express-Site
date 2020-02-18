@@ -30,8 +30,14 @@ const errorRoute = require('./routes/error');
 //use imported routes 
 app.use(indexRoute);
 app.use('/project', projectRoute);
-app.use(errorRoute);
-
+//app.use(errorRoute);
+app.use( (req, res, next) => {
+    //display a user friendly message 
+    console.log("In error handler")
+    const err = new Error(`Could not find the requested resource. Status: ${err.status}, Message: ${err.message}, Stack: ${err.stack}`);
+    err.status = 404;
+    next(err);
+});  
 
                         /*Start Server*/
 //app should listen to port 3000

@@ -1,9 +1,10 @@
 {
   "name": "Static-Node.js-and-Express-Site",
   "version": "1.0.0",
-  "description": "create a  portfolio site to showcase the great projects I've built. The site will contain a modern landing page, an about page contains contact info, talk a little about myrself, and a series of project pages to show off and detail.",
+  "description": "create a  portfolio site to showcase the great projects I've built. The site will contain a modern landing page, an about page contains contact info, talk a little about myself, and a series of project pages to show off and detail.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
