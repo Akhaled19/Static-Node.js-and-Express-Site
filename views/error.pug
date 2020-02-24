@@ -1,10 +1,13 @@
 extends layout.pug
 
 block content
-    h1= `${error.message}`
+  .error  
+    //h1= `${error.message}`
+    h2.sorry Sorry
+    h4 Looks like you're lost...
     img(src="/static/images/404-error-mad-cat.png")
     br
-    p Let's take a look at the problem...
-    h2= `Status: ${error.status}`
-        br
-        p= `Stack: ${error.stack}`
+    br
+    a.return.button(href='/') Return Home
+    p #{message} 
+   
