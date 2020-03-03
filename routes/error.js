@@ -16,14 +16,14 @@ router.get( '*', (req, res, next) => {
     next(err);
 });    
 
-                        /* Error Handler */
+                        /* Error Handler */                        
 router.use( (err, req, res, next) => { 
     res.locals.err = err;
     //reads the status property 
     res.status(err.status);
-    console.log(`error: ${err.message}`);
+    console.log(`Error: ${err.message}`);
     //pass in err object to give the template access to the error data
-    res.render('error', {message: err});
+    res.render('Error', {message: err});
 });
 
 //export error handlers in order to use elsewhere  
