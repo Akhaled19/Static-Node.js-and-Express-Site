@@ -17,4 +17,5 @@ created a  portfolio site to showcase the great projects I've built. The site wi
  * I updated the paragraph text color to be a slightly darker gray in style.css
  * Added a class called error to style the error message on the Not Found page template 
  * Added a class called sorry to sytle the error message title on the Not Found page template 
+ * Added a class called return to style the Return Home button on the Not Found page template 
  * I changed the background color and titles text color on the right hand side of the layout 
