@@ -7,10 +7,11 @@ created a  portfolio site to showcase the great projects I've built. The site wi
 ## Note : Run 'npm start' in the terminal to start the server
 
 ## Project Features:
- */index route contains a list of pprojects that you click into 
- */about route contains more information about myslef and links to my professional accounts
- */project/id routes opens each project and display's specific information about the project  and provide links to GitHub and          a live demo
- *error handling with an error custom template 
+* /index route contains a list of pprojects that you click into 
+* /about route contains more information about myslef and links to my professional accounts
+* /project/id routes opens each project and display's specific information about the project  and provide links to GitHub and          a live demo
+* error handling with an error custom template 
+
  
  ## Styling Changes:
  * I updated the paragraph text color to be a slightly darker gray in style.css
