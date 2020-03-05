@@ -8,6 +8,7 @@ const bodyParse = require('body-parser');
 //creating a new express app
 const app = express();
 
+const logger = require('morgan');
 
                             /*Middleware*/
 //set up 'view engine' to pug 
@@ -18,6 +19,7 @@ app.use(bodyParse.urlencoded({extended: false}));
 //serve the static files 
 app.use('/static', express.static('public'));
 app.use('/static', express.static('images'));
+app.use(logger('dev'));
 
 
                             /*Routes*/
@@ -28,7 +30,7 @@ const projectRoute = require('./routes/project');
 const errorRoute = require('./routes/error');
 
 //use imported routes 
-app.use(indexRoute);
+app.use('/', indexRoute);
 app.use('/project', projectRoute);
 app.use(errorRoute);
 

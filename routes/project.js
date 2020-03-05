@@ -8,6 +8,7 @@ const router = express.Router();
 const { projects } = require('../data.json');
 
 //A dynamic 'project' route: If you go to a project without an id, it will send you back to the portfolio page with all projects 
+//this logs a 304 Not Modified error 
 router.get('/', (req, res) => {
     //redirect the 'project' page without an id 
     res.redirect('/');
@@ -17,21 +18,7 @@ router.get('/', (req, res) => {
  router.get('/:id', (req, res) => {
     const {id} = req.params;
     const project = projects[id];
-    
-    //checks if the id is greater than the length of the projects array
-        if(id >= projects.length ) {
-            res.render('error', {
-                err: {
-                    status: '404',
-                    message: 'Could not find the requested resource',
-                    stack: 'none'
-                }
-            });
-     
-        } else {
-            res.render('project', {project,});
-        }
-   
+    res.render('project', {project});  
 });
 
 //This allows us to export and use in app.js 

@@ -1,29 +1,27 @@
 const express = require('express');
 const router = express.Router();
 
-                        /* 500s */
- router.use( (err, req, res, next) => {
-    err.status = 500;
-    next(err);
-}); 
+//help with logging out errors
 
-                        /* 404 */
-//If no routes match, throw an 404 error
-router.get( '*', (req, res, next) => {
-    //display a user friendly message 
-    const err = new Error('Could not find the requested resource.');
-    err.status = 404;
-    console.log(err.stack);
-    next(err);
+const createError = require('http-errors');
+
+                         /* 404 */
+//If no routes match, catch 404 error and forward it to Error Handler from http-errors
+router.use( (req, res, next) => {
+    next(createError(404));
 });    
 
                         /* Error Handler */                        
 router.use( (err, req, res, next) => { 
+    //set message to err.message
     res.locals.message = err.message;
-    res.locals.status = err.status;
-    
-    console.error(err.stack);
-    //pass in err object to give the template access to the error data
+    //set status to err.status
+    res.locals.status = err.status || 500;
+    //set the response status to err status or 500
+    res.status(err.status || 500); 
+    //logs the error details in the console 
+    console.error(`Something went wrong! Status: ${err.status} Message: ${err.message} Stack: ${err.stack}`);
+    //render the error page
     res.render('error');
 });
 
