@@ -7,7 +7,7 @@ const createError = require('http-errors');
 
                          /* 404 */
 //If no routes match, catch 404 error and forward it to Error Handler from http-errors
-router.use( (req, res, next) => {
+router.use('*', (req, res, next) => {
     next(createError(404));
 });    
 

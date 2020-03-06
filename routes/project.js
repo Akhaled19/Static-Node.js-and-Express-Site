@@ -4,8 +4,10 @@
 
 const express = require('express');
 const router = express.Router();
+
 //projects is an array of objects 
 const { projects } = require('../data.json');
+
 
 //A dynamic 'project' route: If you go to a project without an id, it will send you back to the portfolio page with all projects 
 //this logs a 304 Not Modified error 

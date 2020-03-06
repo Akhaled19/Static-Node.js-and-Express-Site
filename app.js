@@ -10,6 +10,7 @@ const app = express();
 
 const logger = require('morgan');
 
+
                             /*Middleware*/
 //set up 'view engine' to pug 
 app.set('view engine', 'pug');
