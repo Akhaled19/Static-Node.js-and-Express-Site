@@ -20,7 +20,23 @@ router.get('/', (req, res) => {
  router.get('/:id', (req, res) => {
     const {id} = req.params;
     const project = projects[id];
-    res.render('project', {project});  
+    if(id >= projects.length) {
+        const err = new Error('The project does not exist');
+        err.status = 404;
+        err.stack = 'block';
+        res.locals.error = err;
+        res.render('error', err);
+        // res.render('error', {
+        //     err: {
+        //         status: 404,
+        //         message: 'The project does not exist',
+        //         stack: 'none'
+        //     }
+        // })
+    } else {
+        res.render('project', {project});  
+    }
+    
 });
 
 //This allows us to export and use in app.js 
