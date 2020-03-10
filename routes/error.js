@@ -20,7 +20,10 @@ router.use( (err, req, res, next) => {
     //set the response status to err status or 500
     res.status(err.status || 500); 
     //logs the error details in the console 
-    console.error(`Something went wrong! Status: ${err.status} Message: ${err.message} Stack: ${err.stack}`);
+    console.error(`Something went wrong! 
+        Status: ${err.status}. 
+        Message: ${err.message}.
+        Stack: ${err.stack}`);
     //render the error page
     res.render('error');
 });

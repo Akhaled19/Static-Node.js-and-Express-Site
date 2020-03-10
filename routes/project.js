@@ -1,7 +1,6 @@
 //This file holds the project routes of my app 
 
 //setting requests for this file
-
 const express = require('express');
 const router = express.Router();
 
@@ -10,30 +9,23 @@ const { projects } = require('../data.json');
 
 
 //A dynamic 'project' route: If you go to a project without an id, it will send you back to the portfolio page with all projects 
-//this logs a 304 Not Modified error 
 router.get('/', (req, res) => {
     //redirect the 'project' page without an id 
     res.redirect('/');
 }); 
 
 //A dynamic 'project/id' using the json file to render ids for each page 
- router.get('/:id', (req, res) => {
+//& checks if the requested id is greater than the project array length
+ router.get('/:id', (req, res, next) => {
     const {id} = req.params;
     const project = projects[id];
+    //if the id is greater than the project array length..
     if(id >= projects.length) {
-        const err = new Error('The project does not exist');
-        err.status = 404;
-        err.stack = 'block';
-        res.locals.error = err;
-        res.render('error', err);
-        // res.render('error', {
-        //     err: {
-        //         status: 404,
-        //         message: 'The project does not exist',
-        //         stack: 'none'
-        //     }
-        // })
+        //the middleware sub-stack shows the error page and logs info in the terminal for that type of HTTP request to the /user/:id path
+        next();
+    // if the id is NOT greater than the project array length.. 
     } else {
+        //the project page is rendered 
         res.render('project', {project});  
     }
     
