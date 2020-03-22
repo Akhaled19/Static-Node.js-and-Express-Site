@@ -80,8 +80,15 @@ a:hover{
 }
 
 
-.image{
+
+.thumbnail{
   display: inline-block;
+  margin-left: 5px;
+  
+}
+
+.image{
+  display: flex;
   max-width: 100%;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
