@@ -15,6 +15,7 @@ created a  portfolio site to showcase the great projects I've built. The site wi
  
  ## Styling Changes:
  * I updated the paragraph text color to be a slightly darker gray in style.css
+ * In the /index route the project thumbnail and the title is displayed in a inline-block CSS style
  * Added a class called error to style the error message on the Not Found page template 
  * Added a class called sorry to sytle the error message title on the Not Found page template 
  * Added a class called return to style the Return Home button on the Not Found page template 
