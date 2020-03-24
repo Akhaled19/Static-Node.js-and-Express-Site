@@ -17,6 +17,8 @@ router.use( (err, req, res, next) => {
     res.locals.message = err.message;
     //set status to err.status
     res.locals.status = err.status || 500;
+    //set stack to err.stack
+    res.locals.stack = err.stack;
     //set the response status to err status or 500
     res.status(err.status || 500); 
     //logs the error details in the console 

@@ -3,9 +3,15 @@ extends layout.pug
 block content
   .error  
     h2.sorry Sorry
-    h4 Looks like you're lost...
+    h4 #{message}
   
-    img(src="/static/images/404-error-mad-cat.png")
+    img(src="/static/images/404-error-mad-cat.png" )
     br
+    br
+    p See below for the scary details
+    h4 Status: #{status}
+      br
+      p Stack: #{stack}
+
     br
     a.return.button(href='/') Return Home
